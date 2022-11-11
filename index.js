@@ -1,4 +1,4 @@
-var arr = new Array(); // main array
+var arr = new Array();
 let id = (id) => document.getElementById(id);
 
 let firstName = id("firstName");
@@ -23,7 +23,7 @@ female.addEventListener("click", () => {
   dropdownBtn.innerText = "Female";
 });
 
-//submit button
+//submit form button
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -60,14 +60,14 @@ let giveError = (id, index, message) => {
     id.style.border = "6px solid green";
   }
 };
-// remove all button
+// clear all button
 RemoveBtn.addEventListener("click", () => {
   if (confirm("are you sure to delete all rows?")) {
     localStorage.clear();
     location.reload();
   }
 });
-// remove button, for each element
+// remove button
 const removeItem = (id) => {
   let items = JSON.parse(localStorage.getItem("localData"));
 
@@ -168,7 +168,7 @@ const showPopup = (id) => {
       if (index.notes.length > 0) {
         noteText.innerHTML = index.notes;
       } else {
-        noteText.innerHTML = "there is not any notes.";
+        noteText.innerHTML = "";
       }
     }
   });
