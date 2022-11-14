@@ -175,33 +175,34 @@
           </form>
         </div>
       </div>
-
-      <table
-        class="table table-success table-striped table-bordered border-dark"
-        id="table"
-      >
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Lastname</th>
-            <th scope="col">Address</th>
-            <th scope="col">Date</th>
-            <th scope="col">Gender</th>
-            <th scope="col">Notes</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <div class="modal__header">
-              <h1>Notes</h1>
-              <span class="close">&times;</span>
+      <div class="table-responsive">
+        <table
+          class="table table-success table-striped table-bordered border-dark"
+          id="table"
+        >
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Lname</th>
+              <th scope="col">Address</th>
+              <th scope="col">Date</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal__header">
+                <h1>Notes</h1>
+                <span class="close">&times;</span>
+              </div>
+              <p class="note__text" id="noteText"></p>
             </div>
-            <p class="note__text" id="noteText"></p>
           </div>
-        </div>
-      </table>
+        </table>
+      </div>
     </div>
 
     <script src="index.js"></script>
